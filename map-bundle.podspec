@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Headers/*.{h,m}'
   s.resource  = "Resources/*.*"
-  s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -framework ArcGIS -l c++','Header_Search_Paths'=>'${PODS_ROOT}/Pods/map-bundle' }
+  s.xcconfig = { 'OTHER_Linker_FLAGS' => '-ObjC -framework ArcGIS -l c++','Header_Search_Paths'=>'${PODS_ROOT}/Pods/map-bundle' }
 
 
 end
