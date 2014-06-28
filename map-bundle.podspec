@@ -7,7 +7,8 @@ Pod::Spec.new do |s|
   s.author             = { "yan wang" => "tianya_wy@hotmailcom" }
   s.platform     = :ios, "5.0"
   s.source       = { :git => "https://github.com/tianyawy/map-bundle.git", :tag => "0.0.1" }
-  s.resource  = "ArcGIS.bundle"
   s.requires_arc = true
-  s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/resource/"' }
+  s.source_files = 'Headers/*.{h,m}'
+  s.resource  = "Resources/*.*"
+
 end
