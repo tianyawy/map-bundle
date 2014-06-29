@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/tianyawy/map-bundle.git", :tag => "0.0.1" }
   s.requires_arc = true
   s.source_files = 'Headers/*.{h,m}'
-  s.resource  = "Resources/*.*"
+  s.resource  = "ArcGIS.framework"
    s.xcconfig = { 'OTHER_Linker_FLAGS' => '-ObjC -framework ArcGIS -l c++','Header_Search_Paths'=>'${PODS_ROOT}/Pods/map-bundle' }
 
 
